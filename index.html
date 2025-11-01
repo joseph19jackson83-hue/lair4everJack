@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Djoonjack — Boutique</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="brand">Djoonjack <span>Fashion Store Studio</span></div>
+  <nav><button id="view-cart" class="btn small">Panier (<span id="cart-count">0</span>)</button></nav>
+</header>
+
+<main class="container">
+  <section id="catalog" class="catalog"></section>
+
+  <div id="cart-modal" class="modal hidden">
+    <div class="modal-body">
+      <h3>Panier</h3>
+      <div id="cart-items"></div>
+      <div class="cart-total">Total: <strong id="cart-total">0.00</strong> HTG</div>
+      <div class="actions">
+        <button id="checkoutBtn" class="btn gold">Payer avec MonCash</button>
+        <button id="closeCart" class="btn">Fermer</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src="shop.js"></script>
+</body>
+</html>
